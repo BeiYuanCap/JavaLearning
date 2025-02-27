@@ -1,3 +1,2 @@
 # JavaLearning
-Java_Algorithm
-测试推送
+本仓库为Java算法学习仓库
