@@ -1,2 +1,3 @@
 # JavaLearning
-本仓库为Java算法学习仓库
+本仓库为Java算法学习仓库,包括代码随想录、LeetCode hot 100等题目。
+持续学习更新中...
