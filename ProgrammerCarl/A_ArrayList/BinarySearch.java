@@ -1,6 +1,24 @@
 package A_ArrayList;
 
 /*
+ * 二分查找前提：数组有序且无重复
+ * 
+ * 二分查找区间一般定义有两种：左闭右闭即[left, right]，或者左闭右开即[left, right)。
+ * 
+ * 左闭右闭：
+ * while (left <= right) 要使用 <= ，因为left == right是有意义的，所以使用 <=
+ * if (nums[middle] > target) right 要赋值为 middle - 1，因为当前这个nums[middle]一定不是target，那么接下来要查找的左区间结束下标位置就是 middle - 1
+ * 
+ * 左闭右开：
+ * while (left < right)，这里使用 < ,因为left == right在区间[left, right)是没有意义的
+ * if (nums[middle] > target) right 更新为 middle，因为当前nums[middle]不等于target，去左区间继续寻找，而寻找区间是左闭右开区间，所以right更新为middle，即：下一个查询区间不会去比较nums[middle]
+ * 
+ * 时间复杂度：O(log n)
+ * 空间复杂度：O(1)
+ * 
+ */
+
+/*
 
 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
 
