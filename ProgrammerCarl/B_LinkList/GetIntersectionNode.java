@@ -57,7 +57,7 @@ listB 中节点数目为 n
             cur.next = new ListNode(val[i]);
             cur = cur.next;
         }
-        int n = 2;
+        // int n = 2;
 
         while(head!=null){
             System.out.print(head.val+",");
